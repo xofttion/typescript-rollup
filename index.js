@@ -23,7 +23,7 @@ function rollupOutput(entryFile, path) {
   ];
 }
 
-function rolster(options) {
+export default function rolster(options) {
   const { entryFiles, packages, path, plugins, pluginsOptions } = options;
 
   const rolsterTypescript = {
@@ -49,6 +49,3 @@ function rolster(options) {
     };
   });
 }
-
-export { rolster as default };
-//# sourceMappingURL=index.es.js.map

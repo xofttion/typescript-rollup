@@ -1,13 +1,16 @@
 {
   "name": "@rolster/rollup",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "type": "module",
   "description": "Package containing the basic definitions for handling data types.",
   "license": "MIT",
-  "module": "index.js",
-  "main": "index.cjs.js",
-  "unpkg": "index.es.js",
-  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./index.cjs.js"
+    }
+  },
   "author": "Rolster Technology <rolster.developments@gmail.com>",
   "contributors": [
     {
